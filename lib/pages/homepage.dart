@@ -20,7 +20,7 @@ class _Homepage extends State<Homepage> {
     });
   }
 
-  List<Widget> _pages = [ShopPage(), CartPage()];
+  final  List<Widget> _pages = const [ShopPage(), CartPage()];
 
   @override
   Widget build(BuildContext context) {

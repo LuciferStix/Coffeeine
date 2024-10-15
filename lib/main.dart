@@ -1,3 +1,4 @@
+import 'package:coffeeshop/models/coffeeshop.dart';
 import 'package:coffeeshop/pages/homepage.dart';
 import 'package:coffeeshop/theme/themeprovider.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ void main() {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context)=> Themeprovider()),
+      ChangeNotifierProvider(create: (context)=> CoffeeShop()),
     ],
     child: const MyApp(),
     ));
